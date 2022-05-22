@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main template css file -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- contact as css -->
+    <link rel="stylesheet" href="css/contactas.css">
+    <title> Fresh Food</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+
+            <i class="fas fa-cart-arrow-down" style="color: white ; font-size: 35px;"></i>
+            <div class="links">
+                <span class="icon">
+                    <span></span>
+                <span></span>
+                <span></span>
+                </span>
+                <ul>
+                    <li> <a href="index.html">home</a> </li>
+                    <li> <a href="about.html"> about</a> </li>
+                    <li><a href="grocery.html">grocery</a></li>
+                    <li> <a class="active" href="freshFood.html">fresh Food</a> </li>
+                    <li><a href="contactas.html">contact as</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h2 class="beefheader">Beef Corner</h2>
+    <h3 class="beefheader">Click on the button to show the prodicts</h3>
+    <button onclick="beeffunction()" class="zorar"> Show</button>
+    <div id="beefcorner" style=" display: none;">
+        <div class="beef"> <img src="images/beef.jpg_200Wx200H" alt="">
+            <h4>Minced Beef</h4>
+            <p class="sale">EGP 140.00 /KG </p>
+        </div>
+        <div class="beef">
+            <img src="images/balady beef.jpg_200Wx200H" alt="">
+            <h4>Balady Beef Cubes</h4>
+            <p class="sale">EGP 185.00 /KG</p>
+        </div>
+        <div class="beef">
+            <img src="images/sasues.jpg_200Wx200H" alt="">
+            <h4>Beef Sausage</h4>
+            <p class="sale">EGP 134.95 /KG</p>
+        </div>
+        <div class="beef">
+            <img src="images/roast.jpg_200Wx200H" alt="">
+            <h4>Balady Roast Beef</h4>
+            <p class="sale">EGP 204.95 /KG</p>
+        </div>
+        <div class="beef">
+            <img src="images/kofta.jpg_200Wx200H" alt="">
+            <h4>Beef Kofta</h4>
+            <p class="sale">EGP 149.95 /KG</p>
+        </div>
+        <div class="beef">
+            <img src="images/steak.jpg_200Wx200H" alt="">
+            <h4>Beef Steak BBQ</h4>
+            <p class="sale">EGP 167.95 /KG</p>
+        </div>
+    </div>
+    <h2 class="beefheader">Chicken Corner</h2>
+    <h3 class="beefheader">Click on the button to show the prodicts</h3>
+    <button onclick="chickenfunction()" class="zorar2"> Show</button>
+    <div id="chickencorner" style=" display: none;">
+        <div class="chicken">
+            <img src="images/chicken.jpg_200Wx200H" alt="">
+            <h4>Herb Whole Chicken</h4>
+            <p>EGP 76.95 /KG</p>
+        </div>
+        <div class="chicken">
+            <img src="images/tandori.jpg_200Wx200H" alt="">
+            <h4>Tandoori Chicken Legs</h4>
+            <p class="sale">EGP 65.95 /KG</p>
+        </div>
+        <div class="chicken">
+            <img src="images/escalope.jpg_200Wx200H" alt="">
+            <h4>Breaded Chicken Escalope</h4>
+            <p class="sale">EGP 136.95 /KG</p>
+        </div>
+        <div class="chicken">
+            <img src="images/drumsticks.jpg_200Wx200H" alt="">
+            <h4>Marinated Chicken Drumstricks</h4>
+            <p class="sale">EGP 76.95 /KG</p>
+        </div>
+        <div class="chicken">
+            <img src="images/shawarema.jpg_200Wx200H" alt="">
+            <h4>Nori Shawarema 500 GM</h4>
+            <p class="sale">EGP 67.95</p>
+        </div>
+        <div class="chicken">
+            <img src="images/shish.jpg_200Wx200H" alt="">
+            <h4>Chicken Shsh Herbs/KG</h4>
+            <p class="sale">EGP 140.95 /KG</p>
+        </div>
+    </div>
+    <h2 class="beefheader">Fish Corner</h2>
+    <h3 class="beefheader">Click on the button to show the prodicts</h3>
+    <button onclick="fishfunction()" class="zorar3"> Show</button>
+    <div id="fishcorner" style=" display: none;">
+        <div class="fish">
+            <img src="images/fish tesh.jpg_200Wx200H" alt="">
+            <h4>Tilapia Fish Medium</h4>
+            <p class="sale">EGP 36.95 /KG</p>
+        </div>
+        <div class="fish">
+            <img src="images/tilapia.jpg_200Wx200H" alt="">
+            <h4>Super Tilapia Fish</h4>
+            <p class="sale">EGP 53.95 /KG</p>
+        </div>
+        <div class="fish">
+            <img src="images/salmon.jpg_200Wx200H" alt="">
+            <h4>Smoked Salmon-200 gram</h4>
+            <p class="sale">EGP 149.95</p>
+        </div>
+        <div class="fish">
+            <img src="images/gambary.jpg_200Wx200H" alt="">
+            <h4>Fresh Peeled Shrimps</h4>
+            <p class="sale">EGP 109.95 /KG</p>
+        </div>
+        <div class="fish">
+            <img src="images/sea bass.jpg_200Wx200H" alt="">
+            <h4>Sea Bass-Small</h4>
+            <p class="sale">EGP 139.95 /KG</p>
+        </div>
+        <div class="fish">
+            <img src="images/tuna 3aneda.jpg_200Wx200H" alt="">
+            <h4>Tuna Fish</h4>
+            <p class="sale">EGP 49.95 /KG</p>
+        </div>
+    </div>
+    <script>
+        function beeffunction() {
+            var x = document.getElementById('beefcorner');
+            if (x.style.display === 'none') {
+                x.style.display = 'flex';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+
+        function chickenfunction() {
+            var x = document.getElementById('chickencorner');
+            if (x.style.display === 'none') {
+                x.style.display = 'flex';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+
+        function fishfunction() {
+            var x = document.getElementById('fishcorner');
+            if (x.style.display === 'none') {
+                x.style.display = 'flex';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

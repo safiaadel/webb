@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main template css file -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- contact as css -->
+    <link rel="stylesheet" href="css/contactas.css">
+    <title>Food</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+
+            <i class="fas fa-cart-arrow-down" style="color: white ; font-size: 35px;"></i>
+            <div class="links">
+                <span class="icon">
+                    <span></span>
+                <span></span>
+                <span></span>
+                </span>
+                <ul>
+                    <li> <a class="active" href="index.html">home</a> </li>
+                    <li> <a href="about.html"> about</a> </li>
+                    <li><a href="grocery.html">grocery</a></li>
+                    <li><a href="freshFood.html">fresh Food</a></li>
+                    <li><a href="contactas.html">contact as</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="landing">
+        <div class="intro-text">
+            <h1>Welcome To Our Super market</h1>
+        </div>
+    </div>
+
+    <br>
+    <section>
+        <img class="mySlides" src="images/super super.jpeg" alt="">
+        <img class="mySlides" src="images/super super1.jpeg" alt="">
+        <img class="mySlides" src="images/super super2.jpeg" alt="">
+
+    </section>
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides ");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none ";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block ";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+</body>
+
+</html>
